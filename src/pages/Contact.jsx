@@ -1,13 +1,11 @@
 import React from 'react'
 
-const Events = () => {
+const Contact = () => {
   return (
     <div className="flex flex-col items-center justify-center w-full h-screen bg-gray-100">
-      There's no event,
-      go study
-       Idioooooot!!!!!!!
+        Contact us right Now, Idioooooot!!!!!!!
     </div>
   )
 }
 
-export default Events
+export default Contact
