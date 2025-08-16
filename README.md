@@ -22,7 +22,7 @@ A robust, scalable platform for managing event ticket sales, distribution, and v
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/yourusername/ticket-platform.git
+    git clone https://github.com/achdp07/ticket-platform.git
     cd ticket-platform
     ```
 
