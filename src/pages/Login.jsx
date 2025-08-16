@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Login = () => {
   return (
@@ -41,7 +42,7 @@ const Login = () => {
           className='active:scale-[.95] active-duration-75 hover:scale-[1.01] ease-in-out 
           transition-all bg-blue-600 text-white font-medium
           py-2 px-4 rounded-lg'>
-          Sign in</button>
+          Sign up</button>
 
           <button className='border p-2 rounded-lg'>
           <img src="https://img.icons8.com/color/24/000000/google-logo.png" alt="Google Logo" className='inline mr-2' />
@@ -51,20 +52,16 @@ const Login = () => {
 
           <div>
             <p className='text-sm text-gray-500 text-center'>
-            Don't have an account? <a href="/register" className='text-blue-600 font-medium ml-2'>Sign up</a>
+            Don't have an account? <a href="/signup" className='text-blue-600 font-medium ml-2'>Sign up</a>
             </p>
           </div>
         </form>
 
-        
-        
-        
-        
 
       </div>
 
       {/* Image Section */}<div className='hidden lg:flex h-lg w-full lg:w-1/3 
-        bg-blue-600 flex rounded-tl-2xl rounded-bl-2xl'>
+        bg-blue-600  rounded-tl-2xl rounded-bl-2xl'>
       </div>        
     </div>
   )

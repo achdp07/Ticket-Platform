@@ -1,8 +1,30 @@
 import React from 'react'
+import Sidebar, { SidebarItem } from '../components/layout/Sidebar'
+import {  LifeBuoy, Receipt, Boxes, Package, 
+  UserCircle, BarChart3, LayoutDashboard, Settings
+ } from 'lucide-react' 
+
 
 const AdminDashboard = () => {
   return (
-    <div className='flex items-center justify-center h-screen text-2xl font-bold'>AdminDashboard</div>
+    <div>
+    <Sidebar />
+      <SidebarItem 
+      icon={<LayoutDashboard size={20}/> }
+      text={"Dashboard"}
+      alert={""} 
+      />
+
+      <SidebarItem icon={<BarChart3 size={20}/>} text={"Statistics"} active 
+      />
+      <SidebarItem icon={<BarChart3 size={20}/>} text={"Statistics"} active />
+      <SidebarItem icon={<BarChart3 size={20}/>} text={"Statistics"} active />
+      <SidebarItem icon={<BarChart3 size={20}/>} text={"Statistics"} active />
+      <SidebarItem icon={<BarChart3 size={20}/>} text={"Statistics"} active />
+      <SidebarItem icon={<BarChart3 size={20}/>} text={"Statistics"} active />
+      <SidebarItem icon={<BarChart3 size={20}/>} text={"Statistics"} active />
+    
+    </div>
   )
 }
 

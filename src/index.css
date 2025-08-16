@@ -19,7 +19,15 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px 5%;
+    position: fixed;
+    background-color: #111827;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    padding: 6px 40px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar ul{
@@ -42,3 +50,7 @@ a{
     border-radius: 30px;
     color: white;
 } */
+
+body{
+    background-color: rgb(243, 243, 244);
+}
