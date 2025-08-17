@@ -4,15 +4,19 @@ import { MdDateRange } from 'react-icons/md';
 import { MdPriceChange } from 'react-icons/md';
 
 
-const EventCard = ( {EventTitle, EventLoc, EventDate, EventImg, EventPrice, EventCategory} ) => {
+const EventCard = ( {EventTitle, EventLoc, EventDate, EventImg, EventPrice, id, EventCategory} ) => {
   return (
-    <div className='bg-gray-800 rounded-xl shadow p-4 w-auto 
-    sm:w-75 sm:text-sm
-    md:w-85
-        hover:scale-[0.98] duration-200 transition-opacity'>
+    <div className='bg-gray-800 rounded-xl shadow p-4
+        w-full max-w-sm
+        sm:max-w-md
+        md:max-w-lg
+        lg:max-w-xl 
+        hover:bg-gray-950 
+        duration-200 transition' >
       <img src={EventImg} alt="" 
       className='rounded mb-2'/>
       <div className='flex flex-col gap-1'>
+        {id}
         <div className='flex justify-between items-center '>
           <h2 className='font-bold mb-1'>{EventTitle}</h2>
           <div className='flex'>

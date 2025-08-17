@@ -2,116 +2,36 @@ import EventCard from '../components/events/EventCard'
 import { Link } from 'react-router-dom'
 import { PiPlaceholder } from 'react-icons/pi'
 import Searchbar from '../components/layout/Searchbar'
+import EventList from '../components/events/EventList'
+import Filters from '../components/layout/Filters'
 
 const Home = () => {
   return (
     
-    <div>
-      <Searchbar />
-      <div className="min-h-screen bg-gray-900 text-gray-100 
-      flex justify-center items-center">
-      
-      <div className="max-w-7xl mx-auto px-4 py-8 grid grid-cols-1 
-      sm:grid-cols-2 md:grid-cols-4 gap-2">
-        <EventCard
-        EventImg={"https://picsum.photos/id/237/400/300"}
-        EventTitle={"Jololel Show"}
-        EventDate={"03 March"}
-        EventLoc={"Stade Olympique"}
-        EventPrice={"From 3k"}
-        />
+    <div className='bg-gray-900 text-gray-100 h-full overflow-hidden px-6 py-8'>
+      <div className='grid grid-cols-1 md:grid-cols-4 gap-6 h-full'>
 
-        <EventCard
-        EventImg={"https://picsum.photos/id/238/400/300"}
-        EventTitle={"Jololel Show"}
-        EventDate={"03 March"}
-        EventLoc={"Stade Olympique"}
-        EventPrice={"From 3k"}
-        />
+        <div className='md:col-span-1 ml-5 h-screen overflow-y-scroll hide-scrollbar '>
+          <div className="space-y-1">
+            <Searchbar />
+            <div className='border-b border-gray-500'>
+              <p className='text-sm text-gray-600'>Results are displayed based on status</p>
+            </div>
 
-        <EventCard
-        EventImg={"https://picsum.photos/id/279/400/300"}
-        EventTitle={"Jololel Show"}
-        EventDate={"03 March"}
-        EventLoc={"Stade Olympique"}
-        EventPrice={"From 3k"}
-        />
-
-        <EventCard
-        EventImg={"https://picsum.photos/id/240/400/300"}
-        EventTitle={"Jololel Show"}
-        EventDate={"03 March"}
-        EventLoc={"Stade Olympique"}
-        EventPrice={"From 3k"}
-        />
-
-        <EventCard
-        EventImg={"https://picsum.photos/id/241/400/300"}
-        EventTitle={"Jololel Show"}
-        EventDate={"03 March"}
-        EventLoc={"Stade Olympique"}
-        EventPrice={"From 3k"}
-        />
-
-        <EventCard
-        EventImg={"https://picsum.photos/id/242/400/300"}
-        EventTitle={"Jololel Show"}
-        EventDate={"03 March"}
-        EventLoc={"Stade Olympique"}
-        EventPrice={"From 3k"}
-        />
-
-        <EventCard
-        EventImg={"https://picsum.photos/id/243/400/300"}
-        EventTitle={"Jololel Show"}
-        EventDate={"03 March"}
-        EventLoc={"Stade Olympique"}
-        EventPrice={"From 3k"}
-        />
-
-        <EventCard
-        EventImg={"https://picsum.photos/id/200/400/300"}
-        EventTitle={"Jololel Show"}
-        EventDate={"03 March"}
-        EventLoc={"Stade Olympique"}
-        EventPrice={"From 3k"}
-        />
-
-        <EventCard
-        EventImg={"https://picsum.photos/id/401/400/300"}
-        EventTitle={"Jololel Show"}
-        EventDate={"03 March"}
-        EventLoc={"Stade Olympique"}
-        EventPrice={"From 3k"}
-        />
-
-        <EventCard
-        EventImg={"https://picsum.photos/id/300/400/300"}
-        EventTitle={"Jololel Show"}
-        EventDate={"03 March"}
-        EventLoc={"Stade Olympique"}
-        EventPrice={"From 3k"}
-        />
-
-        <EventCard
-        EventImg={"https://picsum.photos/id/209/400/300"}
-        EventTitle={"Jololel Show"}
-        EventDate={"03 March"}
-        EventLoc={"Stade Olympique"}
-        EventPrice={"From 3k"}
-        />
-
-        <EventCard
-        EventImg={"https://picsum.photos/id/100/400/300"}
-        EventTitle={"Jololel Show"}
-        EventDate={"03 March"}
-        EventLoc={"Stade Olympique"}
-        EventPrice={"From 3k"}
-        />
+            <div>
+              <Filters />
+            </div>
+          </div>
         </div>
-      </div>      
+      
+
+      <div className="md:col-span-3 lg:mt-10 mt-1 md:mt-10 h-screen overflow-y-auto hide-scrollbar">
+      <EventList />
+      </div>
     </div>
+  </div>      
+   
   )
 }
 
-export default Home
+export default Home;

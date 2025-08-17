@@ -31,7 +31,7 @@ const SignupForm = () => {
 
           <div>
             <label>Confirm Password</label>
-            <input type="password" placeholder='Enter your Password' 
+            <input type="password" placeholder='Confirm your Password' 
             className='w-full border border-blue-300 p-2 rounded-lg' />
           </div>
 

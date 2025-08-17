@@ -1,48 +1,57 @@
-
 import Home from '../pages/Home';
 import Footer from '../components/layout/Footer';
 import Navbar from '../components/layout/Navbar';
 import Login from '../pages/Login';
 import Events from '../pages/Events';
+import Checkout from '../pages/Checkout';
+import CreateEvent from '../pages/CreateEvent';
 
-import { Routes, Route,useLocation } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import AdminDashboard from '../pages/AdminDashboard';
 import SignupForm from '../components/auth/SignupForm';
+import ProtectedRoute from './ProtectedRoute';
+import OrgDashboard from '../pages/OrgDashboard';
+import EventDetail from '../components/events/EventDetails';
 
 const AppRoutes = () => {
-
   const location = useLocation();
 
-  const HideNavbarr = location.pathname === '/login' || 
-  location.pathname === '/signup' || location.pathname === '/admin';
-  const HideFooter = location.pathname === '/login' || 
-  location.pathname === '/signup' || location.pathname === '/admin';
+  const hideUI = ['/login', '/signup', '/admin-dashboard', '/organizer', '/home'].includes(location.pathname);
 
   return (
-    <div className="">
-      {/* Render Navbar only if not on the login page */}
-      {!HideNavbarr && <Navbar />}
+    <div>
+      {!hideUI && <Navbar />}
 
-      
-      {/* Render Navbar only if not on the signup page */}
-      
-      
-      {/* Render Login page separately */}
-      <div>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/events" element={<Events />} />
-        <Route path='login' element={<Login />} />
-        <Route path='/admin' element={<AdminDashboard />} />
-        <Route path='/login' element={<Login />} />
-        <Route path='/signup' element={<SignupForm />} />
+        <Route path="/event/:id" element={<EventDetail />} />
+        <Route path="/checkout" element={<Checkout />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<SignupForm />} />
+
+        <Route
+          path="/organizer"
+          element={
+            <ProtectedRoute>
+              <OrgDashboard />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/admin-dashboard"
+          element={
+            <ProtectedRoute role="admin">
+              <AdminDashboard />
+            </ProtectedRoute>
+          }
+        />
       </Routes>
 
-      {/* Render Footer only if not on the login or signup page */}
-      {!HideFooter && <Footer />}
-        </div>
+      {!hideUI && <Footer />}
     </div>
-  )
-}
+  );
+};
 
-export default AppRoutes
+export default AppRoutes;
