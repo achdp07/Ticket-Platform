@@ -6,7 +6,7 @@ const SignupForm = () => {
     
     <div className=' flex w-full h-screen' >
       <div className='mt-6 ml-6 '>
-      <a href="/"><img src="src\assets\ICON BLEU.png" alt="" width={40} height={10}/></a>
+      <a href="/home"><img src="src\assets\ICON BLEU.png" alt="" width={40} height={10}/></a>
       </div>
       <div className='items-center justify-center mx-auto my-auto bg-white p-4 rounded-2xl shadow-md' >
 

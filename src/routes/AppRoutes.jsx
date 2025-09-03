@@ -16,20 +16,21 @@ import EventDetail from '../components/events/EventDetails';
 const AppRoutes = () => {
   const location = useLocation();
 
-  const hideUI = ['/login', '/signup', '/admin-dashboard', '/organizer', '/home'].includes(location.pathname);
+  const hideUI = ['/login', '/signup', '/admin-dashboard', '/organizer', '/home', '/EventDetail'].includes(location.pathname);
 
   return (
     <div>
       {!hideUI && <Navbar />}
 
       <Routes>
+        <Route path="" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/events" element={<Events />} />
-        <Route path="/event/:id" element={<EventDetail />} />
+        <Route path="/EventDetail" element={<EventDetail />} />
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignupForm />} />
-
+        <Route path="/create-event" element={<CreateEvent />} />
         <Route
           path="/organizer"
           element={

@@ -2,25 +2,27 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import EventCard from './EventCard';
 import Navbar from '../layout/Navbar';
+import EventDetail from './EventDetails';
+import SignupForm from '../auth/SignupForm';
 
 const EventList = () => {
 return (
 <div className="grid grid-cols-2 items-center justify-center
     sm:grid-cols-2 lg:grid-cols-3 gap-6 pr-2 mx-auto my-auto"> 
           
-          <Link to={`/event/:id`}>
-          <EventCard
+          <Link to="/EventDetail">
+          <EventCard 
             EventImg={"https://picsum.photos/id/237/700/400"}
             EventTitle={"Jololel Show"}
             EventDate={"03 March"}
             EventLoc={"Stade Olympique"}
-            EventPrice={"From 3k"}
+            EventPrice={"From 10k"}
           /></Link>
 
           <EventCard
             EventImg={"https://picsum.photos/id/238/700/400"}
             EventTitle={"Jololel Show"}
-            EventDate={"03 March"}
+            EventDate={"10th May"}
             EventLoc={"Stade Olympique"}
             EventPrice={"From 3k"}
           />
