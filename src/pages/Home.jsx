@@ -14,6 +14,9 @@ const Home = () => {
         <div className='md:col-span-1 ml-5 h-screen overflow-y-scroll hide-scrollbar '>
           <div className="space-y-1">
             <Searchbar />
+            <div className='border-b border-gray-500'>
+              <p className='text-sm text-gray-600'>Results are displayed based on status</p>
+            </div>
 
             <div>
               <Filters />

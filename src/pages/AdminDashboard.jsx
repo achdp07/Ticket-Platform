@@ -7,9 +7,22 @@ import {  LifeBuoy, Receipt, Boxes, Package,
 
 const AdminDashboard = () => {
   return (
-    <div className='flex h-screen'>
+    <div>
     <Sidebar />
-      
+      <SidebarItem 
+      icon={<LayoutDashboard size={20}/> }
+      text={"Dashboard"}
+      alert={""} 
+      />
+
+      <SidebarItem icon={<BarChart3 size={20}/>} text={"Statistics"} active 
+      />
+      <SidebarItem icon={<BarChart3 size={20}/>} text={"Statistics"} active />
+      <SidebarItem icon={<BarChart3 size={20}/>} text={"Statistics"} active />
+      <SidebarItem icon={<BarChart3 size={20}/>} text={"Statistics"} active />
+      <SidebarItem icon={<BarChart3 size={20}/>} text={"Statistics"} active />
+      <SidebarItem icon={<BarChart3 size={20}/>} text={"Statistics"} active />
+      <SidebarItem icon={<BarChart3 size={20}/>} text={"Statistics"} active />
     
     </div>
   )
