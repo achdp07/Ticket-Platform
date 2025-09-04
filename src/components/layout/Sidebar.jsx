@@ -1,58 +1,60 @@
 import React, { Children } from 'react'
-import { ChevronFirst, MoreVertical } from 'lucide-react'
 
-export default function Sidebar({ }) {
+export default function Sidebar() {
   return (
     <aside className='h-screen'>
-      <nav className='h-full flex flex-col bg-gray-900 border-r shadow-sm w-64 '>
-        <div className='p-4 pb-2 flex justify-between items-center'>
-          <img src="src\assets\ICON BLEU.png" alt="logo" 
-          className='w-5 text-white'/>
-
-          <button className='p-0.2 rounded-sm bg-gray-200 hover:bg-grey-100'>
-            <ChevronFirst className='w-5 h-auto'/>
-          </button>
-        </div>
-
-          <ul className='flex-1 p-3'>{}</ul>
-
-        <div className='border-t flex p-3'> 
-          <img 
-            src="https://picsum.photos/300/300" 
-            alt="" 
-            className='w-10 h-10 rounded-full mr-3'
-          />
-
-          <div
-            className='flex justify-between items-center
-            w-68 '>
-          </div>
-
-          <div className='leading-5'>
-            <h4 className=' text-gray-50 font-semibold'>John Doe</h4>
-            <span className='text-xs text-gray-300'>johndoe@gmail.com</span>
-          </div> 
-          <MoreVertical className='text-gray-100 ml-4 mt-1'
-          size={30} />
-        </div>
-
-  
-      </nav>
       
+
+      <div className="transition duration-300 ease-in-out bg-white/80  
+      backdrop-blur-xl border-r border-slate-200/50
+      flex flex-col relative z-10 w-64 h-screen" >
+
+        {/* Logo Section */}
+        <div className="p-2 border-b border-slate-200/50">
+          <div className='flex items-center space-x-3'>
+            <div className='w-10 h-10 bg-gradient-to-r fron-blue-600 to-purple-600 rounded-xl
+            flex items-center justify-center shado'>
+              <a href="/"><img src="src\assets\ICON BLEU.png" alt="Logo" className='h-6 w-auto'/></a>
+            </div>
+        {/* conditional rendering */}
+            <div>
+              <h1 className='text-xl font-bold text-slate-800'>
+                Sidebar
+              </h1>
+              <p className='text-xs text-slate-500 dark:text-white'>
+                Links
+              </p>
+            </div>
+          </div>
+        </div>  
+
+        {/* Navigation Links */}  
+        <nav className='flex-1 p-4 space-y-2 overflow-y-auto'></nav>
+
+        {/* USer profile */} 
+        <div className='p-4 border-slate-200/50 dark:border-slate-700/50'>
+          <div className='flex items-center space-x-3 p-3 rounded-xl bg-slate-50
+          '>
+            <a href="/"></a><img src="https://picsum.photos/200/300"
+            alt='user profile' className='w-10 h-10 rounded-full ring-2 ring-blue-500'>
+            </img>
+
+            <div className='flex-1 min-w-0'>
+              <div className='flex-1 min-w-0'>
+                <p className='text-sm font-medium text-slate-800 '>
+                  Ash Diop
+                </p>
+                <p className='text-xs text-slate-500 '>
+                  Admin
+                </p>
+              </div>
+
+            </div>
+          </div>
+      </div>
+      </div>
     </aside>
   )
 }
 
-export function SidebarItem({ icon, text, active, alert }) {
-  return (
-    <li 
-    className="
-    relative flex items-center py-2 px-3 my-1
-    font-medium rounded-md cursor-pointer
-    transition-colors text-blue-600"> 
-       {icon}
-      <span>{text}</span>
-    </li>
-  )
 
-}

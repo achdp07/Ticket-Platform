@@ -7,7 +7,7 @@ import { ImProfile } from 'react-icons/im'
 const Navbar = () => {
   return (
     <div className='navbar '>
-      <img src="src\assets\ICON BLEU.png" alt="" width={30}/>
+      <a href='/'><img src="src\assets\ICON BLEU.png" alt="" width={30}/></a>
       <a href="/login"><button>
         <User className='text-white bg-blue-600 rounded-full w-7 p-1' />
       </button></a> 

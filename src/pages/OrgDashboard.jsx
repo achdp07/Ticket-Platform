@@ -1,8 +1,11 @@
 import React from 'react'
+import Sidebar from '../components/layout/Sidebar'
 
 const OrgDashboard = () => {
   return (
-    <div>OrgDashboard</div>
+    <div>
+      <Sidebar />
+    </div>
   )
 }
 

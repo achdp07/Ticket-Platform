@@ -23,7 +23,7 @@ const AppRoutes = () => {
       {!hideUI && <Navbar />}
 
       <Routes>
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/events" element={<Events />} />
         <Route path="/event/:id" element={<EventDetail />} />
         <Route path="/checkout" element={<Checkout />} />
