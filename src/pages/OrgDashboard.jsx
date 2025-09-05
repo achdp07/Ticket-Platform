@@ -7,6 +7,7 @@ import { CalendarDays, Users, DollarSign, Clock } from 'lucide-react'
 import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 import { PieChart, Pie, Cell } from "recharts";
 
+
 const Analytics = [
   {
     title: "Total Events",

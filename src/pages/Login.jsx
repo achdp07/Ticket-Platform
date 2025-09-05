@@ -1,28 +1,61 @@
 import React from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { useAuthStore } from "../store/authStore"; // ✅ import zustand store
+import { doSignInWithEmailAndPassword, doSignInWithGoogle } from "../store/authStore";
+
 
 const Login = () => {
-  const login = useAuthStore((state) => state.login); // ✅ get login from store
   const navigate = useNavigate();
+  const [isSigningIn, setIsSigningIn] = React.useState(false);
 
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
 
-    // ✅ simple mock login logic (replace with Firebase later)
-    if (email === "admin@test.com" && password === "admin123") {
-      login("admin");
-      navigate("/admin-dashboard");
-    } else {
-      login("user");
-      navigate("/organizer");
+    // ✅ uses Firebase sign-in method from authStore
+    if (!isSigningIn) {
+      setIsSigningIn(true);
+      try {
+        await doSignInWithEmailAndPassword(email, password); // this should use Firebase if your store is set up
+      } finally {
+        setIsSigningIn(false);
+      }
     }
   };
 
+  const onGoogleSignIn = async (e) => { 
+    e.preventDefault();
+    if (!isSigningIn) {
+      setIsSigningIn(true);
+      try {
+        await doSignInWithGoogle();
+      } finally {
+        setIsSigningIn(false);
+      }
+    }
+  };
+
+
+  // Example: Assume user info (including role) is stored in Zustand store
+  const user = useAuthStore((state) => state.user); // user object with role property
+
+  React.useEffect(() => {
+    if (user && user.role) {
+      // Redirect based on role
+      if (user.role === "organizer") {
+        navigate("/organizer", { replace: true });
+      } else if (user.role === "admin") {
+        navigate("/admin", { replace: true });
+      } else {
+        navigate("/home", { replace: true });
+      }
+    }
+  }, [user, navigate]);
+
   return (
     <div className="flex w-full h-screen">
+      {/* No need for <navigate> component, use useEffect for navigation */}
       <div className="mt-6 ml-6">
         <a href="/">
           <img src="src/assets/ICON BLEU.png" alt="" width={40} height={10} />
@@ -77,17 +110,21 @@ const Login = () => {
           </div>
 
           <div className="mt-6 text-center gap-y-2 flex flex-col">
-            {/* ✅ Change button text to Login */}
             <button
               type="submit"
               className="active:scale-[.95] active-duration-75 hover:scale-[1.01] ease-in-out 
-          transition-all bg-blue-600 text-white font-medium
-          py-2 px-4 rounded-lg"
+              transition-all bg-blue-600 text-white font-medium
+              py-2 px-4 rounded-lg"
+              disabled={isSigningIn}
             >
-              Login
+              {isSigningIn ? "Signing In..." : "Sign In"}
             </button>
-
-            <button className="border p-2 rounded-lg">
+            <button
+              type="button"
+              className="border p-2 rounded-lg"
+              onClick={onGoogleSignIn}
+              disabled={isSigningIn}
+            >
               <img
                 src="https://img.icons8.com/color/24/000000/google-logo.png"
                 alt="Google Logo"
@@ -95,6 +132,7 @@ const Login = () => {
               />
               Sign in with Google
             </button>
+           
           </div>
 
           <div>
@@ -106,9 +144,7 @@ const Login = () => {
             </p>
           </div>
         </form>
-      </div>
-
-      {/* Image Section */}
+        </div>
       <div className="hidden lg:flex h-lg w-full lg:w-1/3
        bg-blue-600 rounded-tl-2xl rounded-bl-2xl"></div>
     </div>

@@ -12,29 +12,32 @@ import SignupForm from '../components/auth/SignupForm';
 import ProtectedRoute from './ProtectedRoute';
 import OrgDashboard from '../pages/OrgDashboard';
 import EventDetail from '../components/events/EventDetails';
+// import Signup from '../pages/Signup';
+
 
 const AppRoutes = () => {
   const location = useLocation();
 
-  const hideUI = ['/login', '/signup', '/admin-dashboard', '/organizer', '/home'].includes(location.pathname);
+  const hideUI = ['/login', '/signup', '/admin-dashboard', '/organizer', '/home', 'organizer/projects'].includes(location.pathname);
 
   return (
     <div>
       {!hideUI && <Navbar />}
 
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/events" element={<Events />} />
         <Route path="/event/:id" element={<EventDetail />} />
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignupForm />} />
+        
 
         <Route
           path="/organizer"
           element={
             <ProtectedRoute>
-              <OrgDashboard />
+              <OrgDashboard/>
             </ProtectedRoute>
           }
         />

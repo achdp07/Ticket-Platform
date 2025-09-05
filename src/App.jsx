@@ -1,7 +1,5 @@
-import React from 'react'
-import Navbar from './components/layout/Navbar'
+
 import AppRoutes from './routes/AppRoutes'
-import ProtectedRoute from './routes/ProtectedRoute'
 
 const App = () => {
  

@@ -5,14 +5,14 @@ import React, { Children } from 'react'
 
 const navigationLinks = [
   { id: 'Dashboard', 
-    href: '#',
+    href: '',
     icon: LayoutDashboard,
     current: true 
   },
 
   {
     id: 'Projects', 
-    href: '#',
+    href: 'organizer/projects',
     icon: ProportionsIcon,
     current: false 
   },
