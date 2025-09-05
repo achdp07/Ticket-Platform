@@ -19,6 +19,7 @@ const AdminDashboard = () => {
         {/* Page content goes here */}
         <div className="flex-1 overflow-y-auto p-4">
           {/* Your dashboard content */}
+          
         </div>
       </div>
     </div>
