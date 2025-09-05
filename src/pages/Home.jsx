@@ -8,7 +8,7 @@ import Filters from '../components/layout/Filters'
 const Home = () => {
   return (
     
-    <div className='bg-gray-900 text-gray-100 h-full overflow-hidden px-6 py-8'>
+    <div className= 'text-gray-900 h-full overflow-hidden px-6 py-8'>
       <div className='grid grid-cols-1 md:grid-cols-4 gap-6 h-full'>
 
         <div className='md:col-span-1 ml-5 h-screen overflow-y-scroll hide-scrollbar '>

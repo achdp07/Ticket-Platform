@@ -20,7 +20,8 @@ a{
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    background-color: #111827;
+    background-color: rgba(226, 232, 240, 0.8);
+    backdrop-filter: blur(1px);
     width: 100%;
     z-index: 1000;
     top: 0;

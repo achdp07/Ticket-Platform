@@ -62,10 +62,10 @@ export default function Sidebar() {
         {/* conditional rendering */}
             <div>
               <h1 className='text-lg font-bold text-slate-800'>
-                Sidebar
+                Ticket'am
               </h1>
               <p className='text-xs text-slate-500 dark:text-white'>
-                Links
+                The goat of ticketing
               </p>
             </div>
           </div>

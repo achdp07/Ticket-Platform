@@ -5,7 +5,7 @@ import { FaInstagram } from 'react-icons/fa6'
 const Footer = () => {
   return (
     
-    <footer className=" bg-gray-900 text-white py-5 px-5 
+    <footer className=" bg-blue-600 text-white py-5 px-5 
     border-t-[0.5px] border-gray-400">
         
         <div className="max-w-fit mx-auto
@@ -18,7 +18,7 @@ const Footer = () => {
                 <li className='flex items-center gap-2'>
                     <FaFacebook />
                     <a href="https://www.facebook.com" 
-                    className="mr-2 text-white-500 hover:text-blue-600">
+                    className="mr-2 text-white-500 hover:text-blue-500">
                     Facebook  
                     </a>
                 </li>
@@ -26,7 +26,7 @@ const Footer = () => {
                 <li className='flex items-center gap-2'>
                     <FaTwitter />
                     <a href="https://www.facebook.com" 
-                    className="text-white-500 hover:text-blue-600">
+                    className="text-white-500 hover:text-blue-500">
                     Twitter  
                     </a>
                 </li>
@@ -34,7 +34,7 @@ const Footer = () => {
                 <li className='flex items-center gap-2'>
                     <FaDiscord />
                     <a href="https://www.facebook.com" 
-                    className="text-white-500 hover:text-blue-600">
+                    className="text-white-500 hover:text-blue-500">
                     Discord  
                     </a>
                 </li>

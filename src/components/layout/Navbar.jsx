@@ -7,9 +7,19 @@ import { ImProfile } from 'react-icons/im'
 const Navbar = () => {
   return (
     <div className='navbar '>
-      <a href='/'><img src="src\assets\ICON BLEU.png" alt="" width={30}/></a>
+      <div className='flex items-center space-x-3'>
+        <a href='/'><img src="src\assets\ICON BLEU.png" alt="" width={30}/></a>
+        <div>
+        <h1 className='text-lg font-bold text-slate-800'>
+          Ticket'am
+        </h1>
+        <p className='text-xs text-slate-500 dark:text-white'>
+          The goat of ticketing
+        </p>
+        </div>
+      </div>
       <a href="/login"><button>
-        <User className='text-white bg-blue-600 rounded-full w-7 p-1' />
+        <User className='text-white bg-blue-600 rounded-full p-1 ' />
       </button></a> 
     </div>
     

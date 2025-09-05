@@ -5,8 +5,8 @@ import Navbar from '../layout/Navbar';
 
 const EventList = () => {
 return (
-<div className="grid grid-cols-2 items-center justify-center
-    sm:grid-cols-2 lg:grid-cols-3 gap-6 pr-2 mx-auto my-auto"> 
+<div className="grid grid-cols-1 items-center justify-center
+    sm:grid-cols-1 lg:grid-cols-2 gap-6 pr-2 mx-auto my-auto"> 
           
           <Link to={`/event/:id`}>
           <EventCard
