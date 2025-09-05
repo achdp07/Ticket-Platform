@@ -1,11 +1,54 @@
+import { CalendarDays, LayoutDashboard, Plus, Projector, ProportionsIcon, 
+  ScanLine, 
+  ShieldHalf } from 'lucide-react'
 import React, { Children } from 'react'
+
+const navigationLinks = [
+  { id: 'Dashboard', 
+    href: '#',
+    icon: LayoutDashboard,
+    current: true 
+  },
+
+  {
+    id: 'Projects', 
+    href: '#',
+    icon: ProportionsIcon,
+    current: false 
+  },
+
+  { id: 'Team', 
+    href: '#', 
+    icon: ShieldHalf,
+    current: false 
+  },
+
+
+  { id: 'Calendar',
+    href: '#',
+    icon: CalendarDays,
+    current: false 
+  },
+
+  { id: 'Transactions',
+    href: '#', 
+    icon: ScanLine,
+    current: false 
+  },
+
+  { id: 'Create event',
+    href: '#', 
+    icon: Plus,
+    current: false 
+  },
+]
 
 export default function Sidebar() {
   return (
     <aside className='h-screen'>
       
 
-      <div className="transition duration-300 ease-in-out bg-white/80  
+      <div className=" transition duration-300 ease-in-out bg-white/80  
       backdrop-blur-xl border-r border-slate-200/50
       flex flex-col relative z-10 w-64 h-screen" >
 
@@ -29,7 +72,16 @@ export default function Sidebar() {
         </div>  
 
         {/* Navigation Links */}  
-        <nav className='flex-1 p-4 space-y-2 overflow-y-auto'></nav>
+        <nav className='flex-1 p-4 space-y-2 overflow-y-auto'>
+          {navigationLinks.map((link) => (
+            <a key={link.id} href={link.href}
+            className={`flex items-center space-x-3 p-2 rounded-lg 
+            hover:bg-slate-100 dark:hover:bg-slate-800` + (link.current ? ' bg-slate-100 dark:bg-slate-800 font-medium' : ' text-slate-600 dark:text-slate-400')}>
+              <link.icon className='w-5 h-5'/>
+              <span>{link.id}</span>
+            </a>
+          ))}
+        </nav>
 
         {/* USer profile */} 
         <div className='p-4 border-slate-200/50 dark:border-slate-700/50'>
