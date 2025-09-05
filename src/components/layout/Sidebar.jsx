@@ -18,7 +18,7 @@ export default function Sidebar() {
             </div>
         {/* conditional rendering */}
             <div>
-              <h1 className='text-xl font-bold text-slate-800'>
+              <h1 className='text-lg font-bold text-slate-800'>
                 Sidebar
               </h1>
               <p className='text-xs text-slate-500 dark:text-white'>

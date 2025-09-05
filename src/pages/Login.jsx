@@ -109,7 +109,8 @@ const Login = () => {
       </div>
 
       {/* Image Section */}
-      <div className="hidden lg:flex h-lg w-full lg:w-1/3 bg-blue-600 rounded-tl-2xl rounded-bl-2xl"></div>
+      <div className="hidden lg:flex h-lg w-full lg:w-1/3
+       bg-blue-600 rounded-tl-2xl rounded-bl-2xl"></div>
     </div>
   );
 };
