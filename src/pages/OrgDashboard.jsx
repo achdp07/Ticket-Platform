@@ -10,8 +10,8 @@ import { Link } from 'react-router-dom'
 
 const OrgDashboard = () => {
   return (
-    <div className="fixed top-0 left-0 h-full w-64">
-      <aside className="h-screen">
+    <div className="flex h-screen">
+      <aside className="fixed top-0 left-0 h-screen w-64">
         <div className="transition duration-300 ease-in-out bg-white/80 backdrop-blur-xl border-r border-slate-200/50
             flex flex-col w-64 h-screen relative z-10">
 
@@ -82,7 +82,7 @@ const OrgDashboard = () => {
         </div>
     
         {/* Page content goes here */}
-        <div className="mt-20 p-4 overflow-y-auto flex-1" style={{ height: 'calc(100vh - 80px)' }}>
+        <div className="mt-16 p-4 flex-1" style={{ height: 'calc(100vh - 80px)' }}>
           <Outlet />
         </div>
       </div>

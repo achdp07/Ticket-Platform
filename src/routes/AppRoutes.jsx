@@ -15,6 +15,9 @@ import EventDetail from '../components/events/EventDetails';
 import Dashbord from '../components/dashboard/Subpages/Dashbord';
 
 import Projects from '../components/dashboard/Subpages/Projects'
+import Team from '../components/dashboard/Subpages/Team';
+import Transactions from '../components/dashboard/Subpages/Transactions';
+import Calendar from '../components/dashboard/Subpages/Calendar'
 
 const AppRoutes = () => {
   const location = useLocation();
@@ -28,7 +31,7 @@ const AppRoutes = () => {
       {!hideUI && <Navbar />}
 
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/events" element={<Events />} />
         <Route path="/event/:id" element={<EventDetail />} />
         <Route path="/checkout" element={<Checkout />} />
@@ -45,9 +48,9 @@ const AppRoutes = () => {
         >
           <Route index element={<Dashbord />}  />
           <Route path="projects" element={<Projects />} />
-          <Route path="team" element={<div>Team page</div>} />
-          <Route path="calendar" element={<div>Calendar page</div>} />
-          <Route path="transactions" element={<div>Transactions page</div>} />
+          <Route path="team" element={<Team />} />
+          <Route path="calendar" element={<Calendar />} />
+          <Route path="transactions" element={<Transactions />} />
         </Route>
 
         <Route
