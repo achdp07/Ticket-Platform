@@ -38,7 +38,7 @@ const Organizer = [
 
 const Filters = () => {
   return (
-    <div className="mt-4 sm:">
+    <div className="overflow-hidden">
       {/* Category */}
       <h4 className="text-slate-900 font-semibold mt-4 mb-3">Category</h4>
       <div className="
@@ -58,8 +58,8 @@ const Filters = () => {
       <div className="border-t border-slate-200" />
 
       {/* Organizer */}
-      <h4 className="text-slate-900 sm:hidden font-semibold mt-6 mb-3">Organizer</h4>
-      <div className="grid grid-cols-2 sm:hidden  md:grid-cols-1 lg:grid-cols-2 gap-2 mb-6">
+      <h4 className="text-slate-900 font-semibold mt-6 mb-3">Organizer</h4>
+      <div className="grid grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-2 mb-6">
         {Organizer.map((org) => (
           <div
             key={org.id}
@@ -79,8 +79,8 @@ const Filters = () => {
       <div className="border-t border-slate-200" />
 
       {/* Date */}
-      <h4 className="text-slate-900 sm:hidden font-semibold mt-6 mb-3">Date</h4>
-      <div className="grid grid-cols-2 sm:hidden md:grid-cols-1 lg:grid-cols-2 gap-2 mb-6">
+      <h4 className="text-slate-900 font-semibold mt-6 mb-3">Date</h4>
+      <div className="grid grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-2 mb-6">
         {Dates.map((date, idx) => (
           <span
             key={idx}

@@ -18,7 +18,7 @@ const Footer = () => {
                 <li className='flex items-center gap-2'>
                     <FaFacebook />
                     <a href="https://www.facebook.com" 
-                    className="mr-2 text-white-500 hover:text-blue-500">
+                    className="mr-2 text-white-500 hover:text-slate-800">
                     Facebook  
                     </a>
                 </li>
@@ -26,7 +26,7 @@ const Footer = () => {
                 <li className='flex items-center gap-2'>
                     <FaTwitter />
                     <a href="https://www.facebook.com" 
-                    className="text-white-500 hover:text-blue-500">
+                    className="text-white-500 hover:text-slate-800">
                     Twitter  
                     </a>
                 </li>
@@ -34,7 +34,7 @@ const Footer = () => {
                 <li className='flex items-center gap-2'>
                     <FaDiscord />
                     <a href="https://www.facebook.com" 
-                    className="text-white-500 hover:text-blue-500">
+                    className="text-white-500 hover:text-slate-800">
                     Discord  
                     </a>
                 </li>
@@ -42,7 +42,7 @@ const Footer = () => {
                 <li className='flex items-center gap-2'>
                     <FaInstagram />
                     <a href="https://www.facebook.com" 
-                    className="text-white-500 hover:text-blue-600">
+                    className="text-white-500 hover:text-slate-800">
                     Instagram  
                     </a>
                 </li>

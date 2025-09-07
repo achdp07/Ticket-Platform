@@ -2,7 +2,6 @@ import Home from '../pages/Home';
 import Footer from '../components/layout/Footer';
 import Navbar from '../components/layout/Navbar';
 import Login from '../pages/Login';
-import Events from '../pages/Events';
 import Checkout from '../pages/Checkout';
 import CreateEvent from '../pages/CreateEvent';
 
@@ -27,6 +26,7 @@ import Users from '../components/dashboard/Subpages2/Users';
 import Organizers from '../components/dashboard/Subpages2/Organizers';
 import Reports from '../components/dashboard/Subpages2/Reports';
 import Settings from '../components/dashboard/Subpages2/Settings';
+import EventCard from '../components/events/EventCard';
 
 const AppRoutes = () => {
   const location = useLocation();
@@ -47,12 +47,12 @@ const AppRoutes = () => {
     <div>
       {!hideUI && <Navbar />}
 
-      <AnimatePresence mode='wait'>
+      <AnimatePresence>
       <Routes>
         <Route path="/home" element={<Home />} />
         <Route 
           path="/events" 
-          element={<Events />
+          element={<EventCard />
           }   
         >
           <Route path="eventdetail/:id" element={<EventDetail />} />

@@ -27,9 +27,9 @@ const Login = () => {
     <PageAnimation>
     <div className="flex w-full h-screen">
       <div className="mt-6 ml-6">
-        <a href="/home">
+        {/* <a href="/home">
           <img src="src/assets/ICON BLEU.png" alt="" width={40} height={10} />
-        </a>
+        </a> */}
       </div>
 
       <div className="items-center justify-center mx-auto my-auto bg-white p-4 rounded-2xl shadow-md">
@@ -80,7 +80,7 @@ const Login = () => {
           </div>
 
           <div className="mt-6 text-center gap-y-2 flex flex-col">
-            {/* ✅ Change button text to Login */}
+            {/* Change button text to Login */}
             <button
               type="submit"
               className="active:scale-[.95] active-duration-75 hover:scale-[1.01] ease-in-out 
@@ -112,8 +112,11 @@ const Login = () => {
       </div>
 
       {/* Image Section */}
-      <div className="hidden lg:flex h-lg w-full lg:w-1/3
-       bg-blue-600 rounded-tl-2xl rounded-bl-2xl"></div>
+
+      
+      {/* <div className="hidden lg:flex h-lg w-full lg:w-1/3
+       bg-blue-600 rounded-tl-2xl rounded-bl-2xl"></div> */}
+       
     </div>
     </PageAnimation>
   );

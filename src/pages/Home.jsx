@@ -5,10 +5,11 @@ import EventList from '../components/events/EventList'
 import Filters from '../components/layout/Filters'
 import Navbar from '../components/layout/Navbar'
 import { AnimatePresence } from 'framer-motion'
+import PageAnimation from '../components/ui/PageAnimation'
 
 const Home = () => {
   return (
-    <AnimatePresence mode='wait'>
+    <PageAnimation>
     <div className= 'text-gray-900 h-full  px-6 py-8'>
       <div className='grid grid-cols-1 md:grid-cols-4 gap-6 h-full'>
 
@@ -30,7 +31,7 @@ const Home = () => {
       </div>
     </div>
   </div>      
-  </AnimatePresence>
+  </PageAnimation>
   )
 }
 

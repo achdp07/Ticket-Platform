@@ -102,25 +102,25 @@ const AdminDashboard = () => {
         <div className="mt-16 p-4 flex-1" style={{ height: 'calc(100vh - 80px)' }}>
           {/* dashboard content */}
           <PageAnimation>
-          {loading ? (
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              className="h-full w-full flex justify-center items-center"
-            >
-              <LoadingSpinner 
-                size="2xl"           // Instead of size={12}, use predefined sizes
-                color="red"          // Instead of "text-red-500", just use "red"
-                variant="border"     // Optional: specify variant
-                label="Loading page..." // Optional: for accessibility
-              />
-            </motion.div>
-          ) : (
+            {loading ? (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                className="h-full w-full flex justify-center items-center"
+              >
+                <LoadingSpinner 
+                  size="2xl"       
+                  color="blue"          
+                  variant="border"     
+                  label="Loading page..." 
+                />
+              </motion.div>
+            ) : (
 
-            <Outlet />
+              <Outlet />
 
-          )}
+            )}
           </PageAnimation>
         </div>
       </div>

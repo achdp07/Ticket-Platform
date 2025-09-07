@@ -101,10 +101,10 @@ const OrgDashboard = () => {
                     className="h-full w-full flex justify-center items-center"
                   >
                     <LoadingSpinner 
-                      size="2xl"           // Instead of size={12}, use predefined sizes
-                      color="red"          // Instead of "text-red-500", just use "red"
-                      variant="border"     // Optional: specify variant
-                      label="Loading page..." // Optional: for accessibility
+                      size="2xl"           
+                      color="blue"         
+                      variant="border"     
+                      label="Loading page..." 
                     />
                   </motion.div>
                 ) : (
