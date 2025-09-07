@@ -2,7 +2,7 @@ import Home from '../pages/Home';
 import Footer from '../components/layout/Footer';
 import Navbar from '../components/layout/Navbar';
 import Login from '../pages/Login';
-import Checkout from '../pages/Checkout';
+import Checkout from '../components/booking/Checkout';
 import CreateEvent from '../pages/CreateEvent';
 
 //animation
@@ -60,7 +60,7 @@ const AppRoutes = () => {
           <Route path="/events" element={<Home />} /> 
           <Route path="/events/eventdetail/:id" element={<EventDetail />} />
 
-          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/checkout/:id" element={<Checkout />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignupForm />} />
 

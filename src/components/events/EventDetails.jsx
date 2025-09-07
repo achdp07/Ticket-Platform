@@ -1,11 +1,17 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { events } from "./Events"; // ✅ make sure path is correct
 import EventCard from "./EventCard"; 
+import { Link } from "react-router-dom";
 import { CalendarDays, MapPin, Clock, DollarSign, ArrowLeft } from "lucide-react";
+import Checkout from "../booking/Checkout";
+import { useState } from "react"; 
+
+
 
 const EventDetail = () => {
   const { id } = useParams();
   const event = events.find((e) => e.id === Number(id)); // ✅ find correct event
+  const [isCheckoutOpen, setCheckoutOpen] = useState(false);
 
   if (!event) {
     return <div className="p-6 text-center text-red-500">Event not found</div>;
@@ -63,9 +69,30 @@ const EventDetail = () => {
           <div className="flex items-center gap-2 text-slate-700">
             <DollarSign size={18} /> {event.EventPrice}
           </div>
-          <button className="w-full bg-blue-600 text-white rounded-lg py-2 mt-4 hover:bg-blue-700">
+          {/* Ticket button opens checkout modal */}
+          <button
+            onClick={() => setCheckoutOpen(true)}
+            className="block w-full bg-blue-600 text-white rounded-lg py-2 mt-4 hover:bg-blue-700 transition"
+          >
             Get Tickets
           </button>
+
+          {/* Checkout Modal */}
+          {isCheckoutOpen && (
+            <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
+              <div className="bg-white w-full max-w-lg rounded-xl shadow-lg p-6 relative">
+                <button
+                  onClick={() => setCheckoutOpen(false)}
+                  className="absolute top-3 right-3 text-slate-600 hover:text-slate-900"
+                >
+                  ✕
+                </button>
+                <Checkout event={event} /> {/* reuse your existing Checkout component */}
+              </div>
+            </div>
+          )}
+
+
         </aside>
       </div>
 

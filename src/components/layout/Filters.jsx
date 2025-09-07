@@ -38,7 +38,7 @@ const Organizer = [
 
 const Filters = () => {
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden h-auto">
       {/* Category */}
       <h4 className="text-slate-900 font-semibold mt-4 mb-3">Category</h4>
       <div className="
