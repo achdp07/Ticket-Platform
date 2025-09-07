@@ -1,7 +1,9 @@
 import React from 'react'
+import PageAnimation from '../ui/PageAnimation'
 
 const SignupForm = () => {
   return (
+    <PageAnimation>
     <div>
     
     <div className=' flex w-full h-screen' >
@@ -61,6 +63,7 @@ const SignupForm = () => {
       </div>        
     </div>
     </div>
+    </PageAnimation>
     
   )
 }

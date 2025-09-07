@@ -13,6 +13,7 @@ import {
   ArrowDownLeft,
   MoreHorizontal
 } from 'lucide-react';
+import PageAnimation from '../../ui/PageAnimation';
 
 const Transactions = () => {
   const [selectedFilter, setSelectedFilter] = useState('all');
@@ -173,6 +174,8 @@ const Transactions = () => {
   };
 
   return (
+
+    <PageAnimation>
     <div className="space-y-4">
       {/* Header */}
       <div className="flex justify-between items-center">
@@ -432,6 +435,7 @@ const Transactions = () => {
         </div>
       )}
     </div>
+    </PageAnimation>
   );
 };
 

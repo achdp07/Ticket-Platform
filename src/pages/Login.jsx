@@ -2,6 +2,8 @@ import React from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { useAuthStore } from "../store/authStore"; // ✅ import zustand store
 
+import PageAnimation from "../components/ui/PageAnimation";
+
 const Login = () => {
   const login = useAuthStore((state) => state.login); // ✅ get login from store
   const navigate = useNavigate();
@@ -22,6 +24,7 @@ const Login = () => {
   };
 
   return (
+    <PageAnimation>
     <div className="flex w-full h-screen">
       <div className="mt-6 ml-6">
         <a href="/home">
@@ -112,6 +115,7 @@ const Login = () => {
       <div className="hidden lg:flex h-lg w-full lg:w-1/3
        bg-blue-600 rounded-tl-2xl rounded-bl-2xl"></div>
     </div>
+    </PageAnimation>
   );
 };
 

@@ -6,6 +6,7 @@ import { CalendarDays, Clock, DollarSign, LayoutDashboard, Plus, Projector, Prop
   ScanLine, 
   ShieldHalf, 
   User} from 'lucide-react'
+import PageAnimation from '../../ui/PageAnimation';
 
 
 const Analytics = [
@@ -53,6 +54,7 @@ const COLORS = ["#3b82f6", "#10b981", "#f59e0b", "#ef4444"];
 
 const Dashbord = () => {
   return (
+    <PageAnimation>
     <div>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4
         overflow-y-scroll hide-scrollbar'>
@@ -159,6 +161,7 @@ const Dashbord = () => {
 
           </div>
     </div>
+    </PageAnimation>
   )
 }
 

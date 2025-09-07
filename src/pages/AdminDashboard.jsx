@@ -1,17 +1,23 @@
-import React from 'react'
+import { useState, useEffect } from 'react'
+import { motion } from 'framer-motion'
+import LoadingSpinner from '../components/ui/LoadinngSpinner'
 
-import {  LifeBuoy, Receipt, Boxes, Package, 
-  UserCircle, BarChart3, LayoutDashboard, Settings,
-  FolderKanban, Users, Calendar, CreditCard, PlusSquare,
-  Building2,
-  Ticket
- } from 'lucide-react' 
+import { BarChart3, LayoutDashboard, Settings, Users, CreditCard, PlusSquare, Building2, Ticket } from 'lucide-react'
+
 import Header from '../components/layout/Header'
 import { Link } from 'react-router-dom'
-
 import { Outlet } from 'react-router-dom'
+import PageAnimation from '../components/ui/PageAnimation'
 
 const AdminDashboard = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate fetching data
+    const timer = setTimeout(() => setLoading(false), 1500);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className='flex h-screen'>
       <aside className="fixed top-0 left-0 h-screen w-64">
@@ -92,14 +98,32 @@ const AdminDashboard = () => {
         </div>
         
 
-        {/* Page content goes here */}
+        {/* Page content */}
         <div className="mt-16 p-4 flex-1" style={{ height: 'calc(100vh - 80px)' }}>
-          {/* Your dashboard content */}
-          <Outlet />
+          {/* dashboard content */}
+          <PageAnimation>
+          {loading ? (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="h-full w-full flex justify-center items-center"
+            >
+              <LoadingSpinner 
+                size="2xl"           // Instead of size={12}, use predefined sizes
+                color="red"          // Instead of "text-red-500", just use "red"
+                variant="border"     // Optional: specify variant
+                label="Loading page..." // Optional: for accessibility
+              />
+            </motion.div>
+          ) : (
+
+            <Outlet />
+
+          )}
+          </PageAnimation>
         </div>
       </div>
     </div>
-  )
-}
-
+)}
 export default AdminDashboard

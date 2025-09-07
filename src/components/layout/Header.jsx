@@ -2,9 +2,11 @@ import { Bell, Menu, Plus, Settings,
 ChevronDown
  } from 'lucide-react'
 import React from 'react'
+import PageAnimation from '../ui/PageAnimation'
 
 const Header = () => {
   return (
+    <PageAnimation disabled>
     <div className=' bg-white/80 backdrop-blur-xl border-b border-slate-200/50
     px-6 py-1.5'>
       <div className="flex items-center justify-between w-full">
@@ -60,6 +62,7 @@ const Header = () => {
           </div>
       </div>
     </div>
+    </PageAnimation>
   )
 }
 

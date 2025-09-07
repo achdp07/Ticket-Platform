@@ -1,5 +1,6 @@
 import React from "react";
 import { Edit, Trash2, Eye } from "lucide-react";
+import PageAnimation from "../../ui/PageAnimation";
 
 const dummyProjects = [
   {
@@ -33,6 +34,7 @@ const dummyProjects = [
 
 const Projects = () => {
   return (
+    <PageAnimation>
     <div className="flex flex-col gap-6">
       {/* Stats Cards */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
@@ -108,6 +110,7 @@ const Projects = () => {
         </table>
       </div>
     </div>
+    </PageAnimation>
   );
 };
 

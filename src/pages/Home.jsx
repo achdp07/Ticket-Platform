@@ -4,10 +4,11 @@ import Searchbar from '../components/layout/Searchbar'
 import EventList from '../components/events/EventList'
 import Filters from '../components/layout/Filters'
 import Navbar from '../components/layout/Navbar'
+import { AnimatePresence } from 'framer-motion'
 
 const Home = () => {
   return (
-    
+    <AnimatePresence mode='wait'>
     <div className= 'text-gray-900 h-full  px-6 py-8'>
       <div className='grid grid-cols-1 md:grid-cols-4 gap-6 h-full'>
 
@@ -25,12 +26,11 @@ const Home = () => {
       <div className="md:col-span-3 lg:mt-10 mt-1 md:mt-10 
         hide-scrollbar">
       <EventList />
-      <Navbar />
 
       </div>
     </div>
   </div>      
-   
+  </AnimatePresence>
   )
 }
 

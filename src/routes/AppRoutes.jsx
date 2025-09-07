@@ -6,6 +6,9 @@ import Events from '../pages/Events';
 import Checkout from '../pages/Checkout';
 import CreateEvent from '../pages/CreateEvent';
 
+//animation
+import { AnimatePresence } from 'framer-motion';
+
 import { Routes, Route, useLocation } from 'react-router-dom';
 import AdminDashboard from '../pages/AdminDashboard';
 import SignupForm from '../components/auth/SignupForm';
@@ -35,10 +38,16 @@ const AppRoutes = () => {
 
   ].includes(location.pathname);
 
+  //ANIMATION
+  const loca = useLocation();
+
+
   return (
+    
     <div>
       {!hideUI && <Navbar />}
 
+      <AnimatePresence mode='wait'>
       <Routes>
         <Route path="/home" element={<Home />} />
         <Route 
@@ -86,7 +95,7 @@ const AppRoutes = () => {
           
         </Route>
       </Routes>
-
+      </AnimatePresence>
       {!hideUI && <Footer />}
     </div>
   );
