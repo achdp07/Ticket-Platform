@@ -12,7 +12,8 @@ const OrgDashboard = () => {
   return (
     <div className="flex h-screen">
       <aside className="fixed top-0 left-0 h-screen w-64">
-        <div className="transition duration-300 ease-in-out bg-white/80 backdrop-blur-xl border-r border-slate-200/50
+        <div className="transition duration-300 ease-in-out bg-white/80 
+            backdrop-blur-xl border-r border-slate-200/50
             flex flex-col w-64 h-screen relative z-10">
 
           {/* Logo Section */}
@@ -63,7 +64,7 @@ const OrgDashboard = () => {
               <img src="https://picsum.photos/200/300" alt="user profile" className="w-10 h-10 rounded-full ring-2 ring-blue-500" />
               <div className="flex-1 min-w-0">
                 <p className="text-sm font-medium text-slate-800">Ash Diop</p>
-                <p className="text-xs text-slate-500">Admin</p>
+                <p className="text-xs text-slate-500">Organizer</p>
               </div>
             </div>
           </div>

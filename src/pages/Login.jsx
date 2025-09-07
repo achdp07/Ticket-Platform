@@ -24,7 +24,7 @@ const Login = () => {
   return (
     <div className="flex w-full h-screen">
       <div className="mt-6 ml-6">
-        <a href="/">
+        <a href="/home">
           <img src="src/assets/ICON BLEU.png" alt="" width={40} height={10} />
         </a>
       </div>

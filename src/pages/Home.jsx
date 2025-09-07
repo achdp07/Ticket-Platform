@@ -1,22 +1,19 @@
 import EventCard from '../components/events/EventCard'
 import { Link } from 'react-router-dom'
-import { PiPlaceholder } from 'react-icons/pi'
 import Searchbar from '../components/layout/Searchbar'
 import EventList from '../components/events/EventList'
 import Filters from '../components/layout/Filters'
+import Navbar from '../components/layout/Navbar'
 
 const Home = () => {
   return (
     
-    <div className= 'text-gray-900 h-full overflow-hidden px-6 py-8'>
+    <div className= 'text-gray-900 h-full  px-6 py-8'>
       <div className='grid grid-cols-1 md:grid-cols-4 gap-6 h-full'>
 
-        <div className='md:col-span-1 ml-5 h-screen overflow-y-scroll hide-scrollbar '>
+        <div className='md:col-span-1 h-screen hide-scrollbar '>
           <div className="space-y-1">
             <Searchbar />
-            <div className='border-b border-gray-500'>
-              <p className='text-sm text-gray-600'>Results are displayed based on status</p>
-            </div>
 
             <div>
               <Filters />
@@ -25,8 +22,11 @@ const Home = () => {
         </div>
       
 
-      <div className="md:col-span-3 lg:mt-10 mt-1 md:mt-10 h-screen overflow-y-auto hide-scrollbar">
+      <div className="md:col-span-3 lg:mt-10 mt-1 md:mt-10 
+        hide-scrollbar">
       <EventList />
+      <Navbar />
+
       </div>
     </div>
   </div>      

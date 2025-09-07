@@ -19,11 +19,20 @@ import Team from '../components/dashboard/Subpages/Team';
 import Transactions from '../components/dashboard/Subpages/Transactions';
 import Calendar from '../components/dashboard/Subpages/Calendar'
 
+import Overview from '../components/dashboard/Subpages2/Overview'
+import Users from '../components/dashboard/Subpages2/Users';
+import Organizers from '../components/dashboard/Subpages2/Organizers';
+import Reports from '../components/dashboard/Subpages2/Reports';
+import Settings from '../components/dashboard/Subpages2/Settings';
+
 const AppRoutes = () => {
   const location = useLocation();
 
-  const hideUI = ['/login', '/signup', '/admin-dashboard', '/organizer', '/home',
-    '/organizer/projects', '/organizer/calendar', '/organizer/transactions', '/organizer/team', 
+  const hideUI = ['/login', '/signup', '/admin-dashboard', '/organizer',
+    '/organizer/projects', '/organizer/calendar', '/organizer/transactions', '/organizer/team',
+    '/admin-dashboard/users', '/admin-dashboard/organizers', '/admin-dashboard/events', '/admin-dashboard/transactions',
+    '/admin-dashboard/reports', '/admin-dashboard/settings', 
+
   ].includes(location.pathname);
 
   return (
@@ -32,8 +41,14 @@ const AppRoutes = () => {
 
       <Routes>
         <Route path="/home" element={<Home />} />
-        <Route path="/events" element={<Events />} />
-        <Route path="/event/:id" element={<EventDetail />} />
+        <Route 
+          path="/events" 
+          element={<Events />
+          }   
+        >
+          <Route path="eventdetail/:id" element={<EventDetail />} />
+        </Route>
+        
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignupForm />} />
@@ -60,7 +75,16 @@ const AppRoutes = () => {
               <AdminDashboard />
             </ProtectedRoute>
           }
-        />
+        >
+          <Route index element={<Overview />}/>
+          <Route path='users' element={<Users/>}/>
+          <Route path='organizers' element={<Organizers/>}/>
+          <Route path='Events' element={<EventDetail/>}/>
+          <Route path='transactions' element={<Transactions/>}/>
+          <Route path='Reports' element={<Reports/>}/>
+          <Route path='Settings' element={<Settings/>}/>
+          
+        </Route>
       </Routes>
 
       {!hideUI && <Footer />}

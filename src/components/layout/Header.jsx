@@ -53,7 +53,7 @@ const Header = () => {
               alt="User Profile" className='w-8 h-8 rounded-full'/>
               <div className='flex-1 px-2'>
               <span className='text-sm font-medium'>Ash Diop</span>
-              <p className='text-xs text-slate-500 '>Admin</p>
+              <p className='text-xs text-slate-500 '>Organizer</p>
               </div>
               <ChevronDown className='h-4 w-4 text-slate-700'/>
             </div>    

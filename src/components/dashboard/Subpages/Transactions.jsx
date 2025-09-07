@@ -173,12 +173,12 @@ const Transactions = () => {
   };
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-4">
       {/* Header */}
       <div className="flex justify-between items-center">
         <div>
           <h1 className="text-3xl font-bold text-slate-800">Transactions</h1>
-          <p className="text-slate-600 mt-1">Gérez vos ventes et remboursements</p>
+          <p className="text-slate-600 mt-1">Manage sales and refunds</p>
         </div>
         <button className="flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
           <Download size={16} />
@@ -191,27 +191,27 @@ const Transactions = () => {
         <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
           <div className="flex items-center justify-between">
             <div>
-              <p className="text-slate-600 text-sm">Revenus totaux</p>
+              <p className="text-slate-600 text-sm">Total revenues</p>
               <p className="text-2xl font-bold text-slate-800">{formatCurrency(totalRevenue)}</p>
             </div>
             <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
               <TrendingUp className="text-green-600" size={24} />
             </div>
           </div>
-          <p className="text-green-600 text-sm mt-2">+12.5% ce mois</p>
+          <p className="text-green-600 text-sm mt-2">+12.5% this month</p>
         </div>
 
         <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
           <div className="flex items-center justify-between">
             <div>
-              <p className="text-slate-600 text-sm">Remboursements</p>
+              <p className="text-slate-600 text-sm">Refunds</p>
               <p className="text-2xl font-bold text-slate-800">{formatCurrency(totalRefunds)}</p>
             </div>
             <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center">
               <TrendingDown className="text-red-600" size={24} />
             </div>
           </div>
-          <p className="text-red-600 text-sm mt-2">-3.2% ce mois</p>
+          <p className="text-red-600 text-sm mt-2">-3.2% this month</p>
         </div>
 
         <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
