@@ -69,4 +69,121 @@ export const events = [
     EventLoc: "Downtown Arena",
     EventPrice: "From 5k",
   },
+
+  {
+    id: 9,
+    EventImg: "https://scontent.fkgl2-1.fna.fbcdn.net/v/t39.30808-6/523237037_1578413883526819_1925712195897600884_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHOl5xhkdyApE12VQ34afBQra_hTJKlEJ-tr-FMkqUQn48grXnNNla8f-O6irK5fynKs8Ei8wposMjjjNlXRzXO&_nc_ohc=-VONgINd5mMQ7kNvwHqffc3&_nc_oc=Adm4HU-vuj4mcfVDQakO65M_SQ7O9rnRm9821Arm1WR0kd7KQtrEv2GuVN2HAAH13fI&_nc_zt=23&_nc_ht=scontent.fkgl2-1.fna&_nc_gid=fB4BD3OKuGplB50GGFRaCg&oh=00_Afbep6y92wYMhlMRjKNSoZz9UJVy38Bvp9pN3NsIj8ph4g&oe=68C39D70",
+    EventTitle: "Art & Culture Festival",
+    EventDate: "25 May",
+    EventLoc: "Downtown Arena",
+    EventPrice: "From 5k",
+  },
+
+  {
+    id: 10,
+    EventImg: "https://scontent.fkgl2-1.fna.fbcdn.net/v/t39.30808-6/523237037_1578413883526819_1925712195897600884_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHOl5xhkdyApE12VQ34afBQra_hTJKlEJ-tr-FMkqUQn48grXnNNla8f-O6irK5fynKs8Ei8wposMjjjNlXRzXO&_nc_ohc=-VONgINd5mMQ7kNvwHqffc3&_nc_oc=Adm4HU-vuj4mcfVDQakO65M_SQ7O9rnRm9821Arm1WR0kd7KQtrEv2GuVN2HAAH13fI&_nc_zt=23&_nc_ht=scontent.fkgl2-1.fna&_nc_gid=fB4BD3OKuGplB50GGFRaCg&oh=00_Afbep6y92wYMhlMRjKNSoZz9UJVy38Bvp9pN3NsIj8ph4g&oe=68C39D70",
+    EventTitle: "Art & Culture Festival",
+    EventDate: "25 May",
+    EventLoc: "Downtown Arena",
+    EventPrice: "From 5k",
+  },
+
+  {
+    id: 11,
+    EventImg: "https://scontent.fkgl2-1.fna.fbcdn.net/v/t39.30808-6/523237037_1578413883526819_1925712195897600884_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHOl5xhkdyApE12VQ34afBQra_hTJKlEJ-tr-FMkqUQn48grXnNNla8f-O6irK5fynKs8Ei8wposMjjjNlXRzXO&_nc_ohc=-VONgINd5mMQ7kNvwHqffc3&_nc_oc=Adm4HU-vuj4mcfVDQakO65M_SQ7O9rnRm9821Arm1WR0kd7KQtrEv2GuVN2HAAH13fI&_nc_zt=23&_nc_ht=scontent.fkgl2-1.fna&_nc_gid=fB4BD3OKuGplB50GGFRaCg&oh=00_Afbep6y92wYMhlMRjKNSoZz9UJVy38Bvp9pN3NsIj8ph4g&oe=68C39D70",
+    EventTitle: "Art & Culture Festival",
+    EventDate: "25 May",
+    EventLoc: "Downtown Arena",
+    EventPrice: "From 5k",
+  },
+
+  {
+    id: 12,
+    EventImg: "https://scontent.fkgl2-1.fna.fbcdn.net/v/t39.30808-6/523237037_1578413883526819_1925712195897600884_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHOl5xhkdyApE12VQ34afBQra_hTJKlEJ-tr-FMkqUQn48grXnNNla8f-O6irK5fynKs8Ei8wposMjjjNlXRzXO&_nc_ohc=-VONgINd5mMQ7kNvwHqffc3&_nc_oc=Adm4HU-vuj4mcfVDQakO65M_SQ7O9rnRm9821Arm1WR0kd7KQtrEv2GuVN2HAAH13fI&_nc_zt=23&_nc_ht=scontent.fkgl2-1.fna&_nc_gid=fB4BD3OKuGplB50GGFRaCg&oh=00_Afbep6y92wYMhlMRjKNSoZz9UJVy38Bvp9pN3NsIj8ph4g&oe=68C39D70",
+    EventTitle: "Art & Culture Festival",
+    EventDate: "25 May",
+    EventLoc: "Downtown Arena",
+    EventPrice: "From 5k",
+  },
+
+  {
+    id: 13,
+    EventImg: "https://scontent.fkgl2-1.fna.fbcdn.net/v/t39.30808-6/523237037_1578413883526819_1925712195897600884_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHOl5xhkdyApE12VQ34afBQra_hTJKlEJ-tr-FMkqUQn48grXnNNla8f-O6irK5fynKs8Ei8wposMjjjNlXRzXO&_nc_ohc=-VONgINd5mMQ7kNvwHqffc3&_nc_oc=Adm4HU-vuj4mcfVDQakO65M_SQ7O9rnRm9821Arm1WR0kd7KQtrEv2GuVN2HAAH13fI&_nc_zt=23&_nc_ht=scontent.fkgl2-1.fna&_nc_gid=fB4BD3OKuGplB50GGFRaCg&oh=00_Afbep6y92wYMhlMRjKNSoZz9UJVy38Bvp9pN3NsIj8ph4g&oe=68C39D70",
+    EventTitle: "Art & Culture Festival",
+    EventDate: "25 May",
+    EventLoc: "Downtown Arena",
+    EventPrice: "From 5k",
+  },
+
+  {
+    id: 14,
+    EventImg: "https://scontent.fkgl2-1.fna.fbcdn.net/v/t39.30808-6/523237037_1578413883526819_1925712195897600884_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHOl5xhkdyApE12VQ34afBQra_hTJKlEJ-tr-FMkqUQn48grXnNNla8f-O6irK5fynKs8Ei8wposMjjjNlXRzXO&_nc_ohc=-VONgINd5mMQ7kNvwHqffc3&_nc_oc=Adm4HU-vuj4mcfVDQakO65M_SQ7O9rnRm9821Arm1WR0kd7KQtrEv2GuVN2HAAH13fI&_nc_zt=23&_nc_ht=scontent.fkgl2-1.fna&_nc_gid=fB4BD3OKuGplB50GGFRaCg&oh=00_Afbep6y92wYMhlMRjKNSoZz9UJVy38Bvp9pN3NsIj8ph4g&oe=68C39D70",
+    EventTitle: "Art & Culture Festival",
+    EventDate: "25 May",
+    EventLoc: "Downtown Arena",
+    EventPrice: "From 5k",
+  },
+
+  {
+    id: 15,
+    EventImg: "https://scontent.fkgl2-1.fna.fbcdn.net/v/t39.30808-6/523237037_1578413883526819_1925712195897600884_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHOl5xhkdyApE12VQ34afBQra_hTJKlEJ-tr-FMkqUQn48grXnNNla8f-O6irK5fynKs8Ei8wposMjjjNlXRzXO&_nc_ohc=-VONgINd5mMQ7kNvwHqffc3&_nc_oc=Adm4HU-vuj4mcfVDQakO65M_SQ7O9rnRm9821Arm1WR0kd7KQtrEv2GuVN2HAAH13fI&_nc_zt=23&_nc_ht=scontent.fkgl2-1.fna&_nc_gid=fB4BD3OKuGplB50GGFRaCg&oh=00_Afbep6y92wYMhlMRjKNSoZz9UJVy38Bvp9pN3NsIj8ph4g&oe=68C39D70",
+    EventTitle: "Art & Culture Festival",
+    EventDate: "25 May",
+    EventLoc: "Downtown Arena",
+    EventPrice: "From 5k",
+  },
+
+  {
+    id: 16,
+    EventImg: "https://scontent.fkgl2-1.fna.fbcdn.net/v/t39.30808-6/523237037_1578413883526819_1925712195897600884_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHOl5xhkdyApE12VQ34afBQra_hTJKlEJ-tr-FMkqUQn48grXnNNla8f-O6irK5fynKs8Ei8wposMjjjNlXRzXO&_nc_ohc=-VONgINd5mMQ7kNvwHqffc3&_nc_oc=Adm4HU-vuj4mcfVDQakO65M_SQ7O9rnRm9821Arm1WR0kd7KQtrEv2GuVN2HAAH13fI&_nc_zt=23&_nc_ht=scontent.fkgl2-1.fna&_nc_gid=fB4BD3OKuGplB50GGFRaCg&oh=00_Afbep6y92wYMhlMRjKNSoZz9UJVy38Bvp9pN3NsIj8ph4g&oe=68C39D70",
+    EventTitle: "Art & Culture Festival",
+    EventDate: "25 May",
+    EventLoc: "Downtown Arena",
+    EventPrice: "From 5k",
+  },
+
+  {
+    id: 17,
+    EventImg: "https://scontent.fkgl2-1.fna.fbcdn.net/v/t39.30808-6/523237037_1578413883526819_1925712195897600884_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHOl5xhkdyApE12VQ34afBQra_hTJKlEJ-tr-FMkqUQn48grXnNNla8f-O6irK5fynKs8Ei8wposMjjjNlXRzXO&_nc_ohc=-VONgINd5mMQ7kNvwHqffc3&_nc_oc=Adm4HU-vuj4mcfVDQakO65M_SQ7O9rnRm9821Arm1WR0kd7KQtrEv2GuVN2HAAH13fI&_nc_zt=23&_nc_ht=scontent.fkgl2-1.fna&_nc_gid=fB4BD3OKuGplB50GGFRaCg&oh=00_Afbep6y92wYMhlMRjKNSoZz9UJVy38Bvp9pN3NsIj8ph4g&oe=68C39D70",
+    EventTitle: "Art & Culture Festival",
+    EventDate: "25 May",
+    EventLoc: "Downtown Arena",
+    EventPrice: "From 5k",
+  },
+
+  {
+    id: 18,
+    EventImg: "https://scontent.fkgl2-1.fna.fbcdn.net/v/t39.30808-6/523237037_1578413883526819_1925712195897600884_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHOl5xhkdyApE12VQ34afBQra_hTJKlEJ-tr-FMkqUQn48grXnNNla8f-O6irK5fynKs8Ei8wposMjjjNlXRzXO&_nc_ohc=-VONgINd5mMQ7kNvwHqffc3&_nc_oc=Adm4HU-vuj4mcfVDQakO65M_SQ7O9rnRm9821Arm1WR0kd7KQtrEv2GuVN2HAAH13fI&_nc_zt=23&_nc_ht=scontent.fkgl2-1.fna&_nc_gid=fB4BD3OKuGplB50GGFRaCg&oh=00_Afbep6y92wYMhlMRjKNSoZz9UJVy38Bvp9pN3NsIj8ph4g&oe=68C39D70",
+    EventTitle: "Art & Culture Festival",
+    EventDate: "25 May",
+    EventLoc: "Downtown Arena",
+    EventPrice: "From 5k",
+  },
+
+  {
+    id: 19,
+    EventImg: "https://scontent.fkgl2-1.fna.fbcdn.net/v/t39.30808-6/523237037_1578413883526819_1925712195897600884_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHOl5xhkdyApE12VQ34afBQra_hTJKlEJ-tr-FMkqUQn48grXnNNla8f-O6irK5fynKs8Ei8wposMjjjNlXRzXO&_nc_ohc=-VONgINd5mMQ7kNvwHqffc3&_nc_oc=Adm4HU-vuj4mcfVDQakO65M_SQ7O9rnRm9821Arm1WR0kd7KQtrEv2GuVN2HAAH13fI&_nc_zt=23&_nc_ht=scontent.fkgl2-1.fna&_nc_gid=fB4BD3OKuGplB50GGFRaCg&oh=00_Afbep6y92wYMhlMRjKNSoZz9UJVy38Bvp9pN3NsIj8ph4g&oe=68C39D70",
+    EventTitle: "Art & Culture Festival",
+    EventDate: "25 May",
+    EventLoc: "Downtown Arena",
+    EventPrice: "From 5k",
+  },
+
+  {
+    id: 20,
+    EventImg: "https://scontent.fkgl2-1.fna.fbcdn.net/v/t39.30808-6/523237037_1578413883526819_1925712195897600884_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHOl5xhkdyApE12VQ34afBQra_hTJKlEJ-tr-FMkqUQn48grXnNNla8f-O6irK5fynKs8Ei8wposMjjjNlXRzXO&_nc_ohc=-VONgINd5mMQ7kNvwHqffc3&_nc_oc=Adm4HU-vuj4mcfVDQakO65M_SQ7O9rnRm9821Arm1WR0kd7KQtrEv2GuVN2HAAH13fI&_nc_zt=23&_nc_ht=scontent.fkgl2-1.fna&_nc_gid=fB4BD3OKuGplB50GGFRaCg&oh=00_Afbep6y92wYMhlMRjKNSoZz9UJVy38Bvp9pN3NsIj8ph4g&oe=68C39D70",
+    EventTitle: "Art & Culture Festival",
+    EventDate: "25 May",
+    EventLoc: "Downtown Arena",
+    EventPrice: "From 5k",
+  },
+
+  {
+    id: 21,
+    EventImg: "https://scontent.fkgl2-1.fna.fbcdn.net/v/t39.30808-6/523237037_1578413883526819_1925712195897600884_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHOl5xhkdyApE12VQ34afBQra_hTJKlEJ-tr-FMkqUQn48grXnNNla8f-O6irK5fynKs8Ei8wposMjjjNlXRzXO&_nc_ohc=-VONgINd5mMQ7kNvwHqffc3&_nc_oc=Adm4HU-vuj4mcfVDQakO65M_SQ7O9rnRm9821Arm1WR0kd7KQtrEv2GuVN2HAAH13fI&_nc_zt=23&_nc_ht=scontent.fkgl2-1.fna&_nc_gid=fB4BD3OKuGplB50GGFRaCg&oh=00_Afbep6y92wYMhlMRjKNSoZz9UJVy38Bvp9pN3NsIj8ph4g&oe=68C39D70",
+    EventTitle: "Art & Culture Festival",
+    EventDate: "25 May",
+    EventLoc: "Downtown Arena",
+    EventPrice: "From 5k",
+  },
 ];
